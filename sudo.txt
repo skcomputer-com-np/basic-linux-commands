@@ -1,0 +1,162 @@
+Enroll No
+1116/35075/01201
+13/04/2014 12:38:25
+
+7802948934
+388001
+
+Addhar Card number
+5934/1182/2664
+
+
+Q1. When you run django project and get this type of error
+
+?: (1_7.W001) MIDDLEWARE_CLASSES is not set.
+	HINT: Django 1.7 changed the global defaults for the MIDDLEWARE_CLASSES. django.contrib.sessions.middleware.SessionMiddleware, django.contrib.auth.middleware.AuthenticationMiddleware, and django.contrib.messages.middleware.MessageMiddleware were removed from the defaults. If your project needs these middleware then you should configure this setting.
+
+Ans:
+
+- python3.6 manage.py migrate
+
+- python3.6 manage.py runserver
+
+//change default python version from 2.7 to 3.6
+alias python=python3.6
+
+//To kill all process
+$kill -15 -1
+
+//For Partitioning disk
+$ sudo apt-get install gparted 
+$ sudo apt-get update
+$ sudo apt-get upgrade << to update all app
+
+
+//For python3.6 setting
+ sudo add-apt-repository ppa:jonathonf/python-3.6
+ sudo apt-get update
+ sudo apt-get install python3.6
+
+after finishing above task type 'python3.6 -version' in terminal
+
+//To install software center
+ sudo apt remove software-center
+ sudo apt install software-center
+
+//To give permision
+ sudo chmod 777 -R SK/
+	-->Here.. 'SK' is last directory/File/Folder name
+
+//To execute .run file in ubuntu
+exmaple:
+ download xampp run file then type below:
+ -Give permission to downloade .run file then type
+ $sudo ./xampp-linux-x64-5.6.21-0-installer.run
+ 
+ Visit this page:
+ https://www.linuxhelp.com/how-to-install-xampp-stack-on-ubuntu-16-04/
+
+
+//To make python3.6 as default
+
+sk@sk-singh:~/Desktop$ alias python=python3
+
+sk@sk-singh:~/Desktop$ python
+
+Python 3.5.2 (default, Nov 17 2016, 17:05:23) 
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+		Or
+
+- You can simply run your python scrip like below:
+	
+	python3.6 Demo.py
+
+
+
+//You can remove empty directories with 
+
+	rmdir <directory>
+
+//and non-empty directories with 
+
+	rm -r <directory>. 
+
+
+//To create desktop shortcut in ubuntu using gnome in ubuntu 16.04
+//for installing gnome
+-sudo apt-get install --no-install-recommends gnome-panel
+//After intalling , type below code in terminal to create desktop
+-gnome-desktop-item-edit ~/Desktop/ --create-new
+
+
+/to set java servlet path
+export CLASSPATH=$CLASSPATH:/opt/tomcat/apache-tomcat-8.5.15/lib/servlet-api.jar
+
+/XAMPP: Starting ProFTPD...Warning: World-writable config file '/opt/lampp/etc/my.cnf' is ignored
+chmod 644 /opt/lampp/etc/my.cnf
+
+
+
+//To start mysql type following cmd in terminal:
+	$mysql -u root -p
+	password:root@123
+
+
+//phpmyadmin error
+#2002 - No such file or directory — The server is not responding (or the local server's socket is not correctly configured).
+
+$sudo service mysql stop
+$sudo /opt/lampp/lampp start
+
+run http://localhost
+
+
+Package import and compile
+$javac -cp .:../lib/servlet-api.jar StudMVC.java 
+
+Use for all jar file
+$javac -cp .:../lib/* StudMVC.java  
+
+
+//Error
+An error occurred, please run Package Manager from the right-click from the right click window or apt-get in a terminal to see what is wrong.
+->sudo apt-get -f install
+->sudo apt-get clean
+->sudo apt-get autoremove
+
+
+//System problem deteced 
+-->sudo rm /var/crash/*
+
+
+//The following packages have unmet dependencies:
+ vlc : Depends: libgles1-mesa (>= 7.8.1) but it is not going to be installed or
+                libgles1
+       Depends: libgles2-mesa (>= 7.8.1) but it is not going to be installed or
+                libgles2
+-->sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
+
+
+//laravel create project in htdocs
+-->php composer.phar create-project laravel/laravel=5.3.0 --prefer-dist /opt/lampp/htdocs/mylaravel2
+
+
+
+pg//Illuminate\Foundation\ComposerScripts::postUpdate > php artisan optimize Script php artisan optimize handling the post-update-cmd event returned with error code 255
+->give the permission to storage folder which is available inside laravel project
+
+//Laravel artisan server run
+->php7.1 artisan serveexit
+
+// undefined reference to `pow' in c laguage
+gcc Argstrong.c -lm
+
+
+//To See process is running or not in background
+->ps aux |openerp  (This is example of checking odoo is running or not)
+
+//Postgres database passwordpassword
+-->su - postgres
+-->postgres123
